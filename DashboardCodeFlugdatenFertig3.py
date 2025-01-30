@@ -95,6 +95,7 @@
     "\n",
     "# Dashboard-App\n",
     "app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])\n",
+    "server = app.server\n",
     "\n",
     "# Header-Layout\n",
     "header_layout = html.Div(\n",
@@ -446,7 +447,7 @@
     "    )\n",
     "    return fig\n",
     "\n",
-    "server = app.server\n",
+    
     "if __name__ == \"__main__\":\n",
     "    app.run_server(debug=False, host='127.0.0.1', port=9190)"
    ]
